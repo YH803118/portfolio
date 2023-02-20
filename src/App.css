@@ -9,14 +9,19 @@
   right: 70px;
 }
 .topBtn {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 15px;
   border: 0px;
+  background-image: url("img/topBtn.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
   /* color: rgb(230, 230, 230); */
   /* font-size: 30px; */
 }
 .topBtn:hover {
+  background-color: rgb(150, 150, 150);
   cursor: pointer;
 }
 /* -------------------------------------------------------- */

@@ -38,9 +38,9 @@ function App() {
         <div className="LeftBar">
           <div className="MenuBar">
             <div className="Menu">
-              <button className="sectionBtn">섹션1</button>
-              <button className="sectionBtn">섹션2</button>
-              <button className="sectionBtn">섹션3</button>
+              <button className="sectionBtn">자기소개</button>
+              <button className="sectionBtn">프로젝트</button>
+              <button className="sectionBtn">학력/활동</button>
               <button className="sectionBtn">섹션4</button>
             </div>
             <p className="lastUpdate">Last Update: {lastUpdate}</p>
@@ -55,9 +55,7 @@ function App() {
         </div>
       </div>
       <div className="fixedDiv">
-        <button className="topBtn">
-          <img src="\img\topBtn.png" alt="topBtnImg" />
-        </button>
+        <button className="topBtn"></button>
       </div>
     </>
   );
