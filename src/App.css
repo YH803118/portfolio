@@ -2,6 +2,25 @@
   display: flex;
   height: 100%;
 }
+/* -------------------------------------------------------- */
+.fixedDiv {
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+}
+.topBtn {
+  width: 100px;
+  height: 70px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: rgb(80, 80, 80);
+  color: rgb(230, 230, 230);
+  font-size: 30px;
+}
+.topBtn:hover {
+  cursor: pointer;
+}
+/* -------------------------------------------------------- */
 .LeftBar {
   position: fixed;
   display: flex;
@@ -35,12 +54,12 @@
   color: rgb(80, 80, 80);
   padding-bottom: 20px;
 }
-
+/* -------------------------------------------------------- */
 .vLine {
   margin: 15px 0px 15px 0px;
   border: 3px solid rgb(80, 80, 80);
 }
-
+/* -------------------------------------------------------- */
 .Content {
   margin-left: 300px;
   padding: 50px;
