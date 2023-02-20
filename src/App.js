@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const section = document.querySelectorAll(".section");
     const naviBtn = document.querySelectorAll(".sectionBtn");
-
+    naviBtn[0].style.color = selectedColor;
     window.addEventListener("scroll", () => {
       const scroll = window.scrollY;
       colorReturn();
@@ -48,14 +48,16 @@ function App() {
           <div className="vLine" />
         </div>
         <div className="Content">
-          <div className="section">section1</div>
-          <div className="section">section2</div>
-          <div className="section">section3</div>
+          <div className="section">section1 - 간략한 자기소개</div>
+          <div className="section">section2 - 프로젝트</div>
+          <div className="section">section3 - 학력/활동</div>
           <div className="section">section4</div>
         </div>
       </div>
       <div className="fixedDiv">
-        <button className="topBtn">top</button>
+        <button className="topBtn">
+          <img src="\img\topBtn.png" alt="topBtnImg" />
+        </button>
       </div>
     </>
   );
