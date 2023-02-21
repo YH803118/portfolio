@@ -38,7 +38,7 @@
   justify-content: space-between;
 }
 .Menu {
-  margin: 50px 0px 0px 30px;
+  margin: 30px 0px 0px 30px;
 }
 .Menu button {
   width: 200px;
@@ -48,7 +48,7 @@
   border: 0px;
   font-size: 25px;
   text-align: left;
-  margin-bottom: 15px;
+  margin: 20px 0px 10px 0px;
 }
 .Menu button:hover {
   cursor: pointer;
@@ -58,6 +58,17 @@
   color: rgb(80, 80, 80);
   padding-bottom: 20px;
 }
+
+.subItem {
+  display: none;
+}
+.subItem button {
+  padding-left: 20px;
+  font-size: 16px;
+  margin: 0;
+  /* margin-bottom: 30px; */
+}
+
 /* -------------------------------------------------------- */
 .vLine {
   margin: 15px 0px 15px 0px;
