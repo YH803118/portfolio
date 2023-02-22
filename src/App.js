@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
+import Sections from "./Sections";
 const normalColor = "rgb(40,40,40)";
 const selectedColor = "rgba(200, 200, 200, 1)";
 
@@ -64,9 +65,14 @@ function App() {
         </div>
         <div className="Content">
           <div className="section">section1 - 간략한 자기소개</div>
-          <div className="section">section2 - 프로젝트</div>
-
-          <div className="section">section3 - 학력/활동</div>
+          <div className="section">
+            section2 - 프로젝트
+            <Sections sectionName={"project"} />
+          </div>
+          <div className="section">
+            section3 - 학력/활동
+            <Sections sectionName={"history"} />
+          </div>
           <div className="section">section4</div>
         </div>
       </div>
