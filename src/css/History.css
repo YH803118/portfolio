@@ -1,0 +1,36 @@
+.historyTable {
+  margin-bottom: 30px;
+}
+
+.firstTd {
+  width: 800px;
+  padding-left: 10px;
+  border-bottom: 2.5px solid rgb(112, 112, 112);
+}
+
+.historyName {
+  margin: 10px 0 5px 0;
+  font-size: 40px;
+  color: rgb(20, 20, 20);
+  display: inline-block;
+}
+
+.historyDate {
+  display: inline;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(112, 112, 112);
+  padding-left: 15px;
+  margin: 0;
+}
+
+.historyDetail ul {
+  margin-top: 5px;
+  padding-left: 25px;
+}
+
+.historyDetail li {
+  padding-top: 15px;
+  list-style: none;
+  font-size: 18px;
+}

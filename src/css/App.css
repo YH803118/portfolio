@@ -13,7 +13,7 @@
   height: 70px;
   border-radius: 15px;
   border: 0px;
-  background-image: url("img/topBtn.png");
+  background-image: url("../img/topBtn.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
@@ -28,12 +28,12 @@
 .LeftBar {
   position: fixed;
   display: flex;
-  width: 300px;
+  width: 20%;
   height: 100%;
 }
 .MenuBar {
-  /* background-color: rgb(20, 20, 20); */
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -41,14 +41,16 @@
   margin: 30px 0px 0px 30px;
 }
 .Menu button {
-  width: 200px;
+  font-family: "seoulNanum";
+  transition: font-size linear 0.1s;
+  width: 250px;
   height: 30px;
-  background-color: white;
-  /* color: rgb(220, 220, 220); */
+  background-color: rgb(245, 245, 245);
+  color: rgb(77, 77, 77);
   border: 0px;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
-  margin: 20px 0px 10px 0px;
+  margin: 30px 0px 10px 0px;
 }
 .Menu button:hover {
   cursor: pointer;
@@ -60,11 +62,12 @@
 }
 
 .subItem {
+  margin-top: 15px;
   display: none;
 }
 .subItem button {
   padding-left: 20px;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
   /* margin-bottom: 30px; */
 }
@@ -76,13 +79,22 @@
 }
 /* -------------------------------------------------------- */
 .Content {
-  width: 100%;
-  box-sizing: border-box;
+  /* transition: margin-left linear 0.2s; */
+  padding-left: 20%;
 }
 
 .section {
-  margin-left: 300px;
   padding: 50px;
-  position: relative;
+}
+
+.section:nth-child(1) {
+  height: 100vh;
+}
+
+.section:nth-child(2) {
+  height: 100vh;
+}
+
+.section:nth-child(3) {
   height: 100vh;
 }
