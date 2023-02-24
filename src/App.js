@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./css/App.css";
 import Sections from "./Sections";
-const normalColor = "rgb(40,40,40)";
-const selectedColor = "rgba(130, 130, 130, 1)";
+export const normalColor = "rgb(40,40,40)";
+export const selectedColor = "rgba(130, 130, 130, 1)";
 
 function App() {
   const lastUpdate = new Intl.DateTimeFormat("kr").format(new Date());
@@ -18,10 +18,20 @@ function App() {
     window.addEventListener("scroll", () => {
       const scroll = window.scrollY;
       colorReturn();
-      const page = Math.floor(scroll / window.innerHeight);
-      naviBtn[page].style.color = selectedColor;
-      naviBtn[page].style.fontSize = "40px";
-      subItem[page].style.display = "block";
+      const page = Math.floor(scroll - window.innerHeight);
+      if (page < 0) {
+        naviBtn[0].style.color = selectedColor;
+        naviBtn[0].style.fontSize = "40px";
+        subItem[0].style.display = "block";
+      } else if (page < 902 + 857 + 685 + 853) {
+        naviBtn[1].style.color = selectedColor;
+        naviBtn[1].style.fontSize = "40px";
+        subItem[1].style.display = "block";
+      } else {
+        naviBtn[2].style.color = selectedColor;
+        naviBtn[2].style.fontSize = "40px";
+        subItem[2].style.display = "block";
+      }
     });
 
     const colorReturn = () => {
@@ -33,7 +43,6 @@ function App() {
     };
     for (let i = 0; i < naviBtn.length; i++) {
       naviBtn[i].addEventListener("click", () => {
-        console.log("clickEvent + ", section[i]);
         section[i].scrollIntoView({ behavior: "smooth" });
       });
     }
@@ -70,15 +79,15 @@ function App() {
                 프로젝트
               </button>
               <div className="subItem">
-                <button>학교 홈페이지</button>
-                <button>빅데이터 기반 음악 추천</button>
-                <button>스터디 구인(Ozistudy)</button>
-                <button>쇼핑몰(Tshopping)</button>
+                <button className="projectBtn">학교 홈페이지</button>
+                <button className="projectBtn">빅데이터 기반 음악 추천</button>
+                <button className="projectBtn">스터디 구인(Ozistudy)</button>
+                <button className="projectBtn">쇼핑몰(Tshopping)</button>
               </div>
               <button className="sectionBtn">학력/활동</button>
               <div className="subItem">
-                <button>청운대학교</button>
-                <button>빅데이터 기반 개발자 양성과정</button>
+                <button className="historyBtn">청운대학교</button>
+                <button className="historyBtn">빅데이터 기반 개발자 양성과정</button>
               </div>
             </div>
             <p className="lastUpdate">Last Update: {lastUpdate}</p>

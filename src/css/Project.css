@@ -1,5 +1,11 @@
+.projectDiv {
+  /* height: 770px; */
+  padding-bottom: 30px;
+}
+
 .projectName {
   margin: 10px 0 15px 0;
+  font-size: 40px;
   display: inline-block;
 }
 
@@ -14,11 +20,21 @@
 
 .projectContentTable {
   /* background-color: rgb(245, 245, 245); */
-  width: 600px;
+  width: 700px;
   padding: 2px;
 }
 .projectContentTr {
   margin: 0px;
-  padding: 4px 2px 2px 2px;
-  border-bottom: 1.5px solid rgb(112, 112, 112);
+  padding: 7px 2px 2px 5px;
+  border-bottom: 1.5px solid rgb(146, 146, 146);
 }
+.projectLink {
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+}
+.projectImg {
+  margin: 10px 0 0 0;
+  width: 700px;
+}
+
+/* 902 857 685 833 */

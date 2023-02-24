@@ -1,3 +1,7 @@
+import school from "./img/school.png";
+import catMusic from "./img/catMusic.png";
+import oziStudy from "./img/ozistudy.png";
+import tshopping from "./img/tshopping.png";
 export const project = [
   [
     "학교 홈페이지",
@@ -8,22 +12,27 @@ export const project = [
     ],
     3,
     3,
+    school,
+    ["https://github.com/YH803118/20220322_teamA_first_project$깃허브 링크"],
+    "html, css, javascript, spring, eclipse, MyBatis, JDBC, Apache Tomcat",
   ],
   [
     "빅데이터 기반 음악 추천",
     ["크롤링을 통해 음악 정보를 받아옴", "가사 분석을 통해 이용자의감정 상태에 맞는 음악을 추천", "aws를 통해 배포"],
     5,
     3,
+    catMusic,
+    ["https://github.com/YH803118/CAT$깃허브 링크", "https://cat-music.kro.kr$구현 웹사이트"],
+    "html, css, javascript, aws, django, uwsgi, nginx, mysql",
   ],
   [
     "스터디 구인 사이트(Ozistudy)",
-    [
-      "React와 express를 활용한 회원관리와 스터디 개설, 참여, 검색 등의 기능을 구현",
-      "Heroku를 통해 배포",
-      "https://ozitest.herokuapp.com/",
-    ],
+    ["React와 express를 활용한 회원관리와 스터디 개설, 참여, 검색 등의 기능을 구현", "Heroku를 통해 배포"],
     4,
     2,
+    oziStudy,
+    ["https://github.com/YH803118/oziStudy$깃허브 링크", "https://ozitest.herokuapp.com/$구현 웹사이트"],
+    "html, css, javascript, React, nodejs, express, heroku, mysql",
   ],
   [
     "쇼핑몰(Tshopping)",
@@ -32,10 +41,12 @@ export const project = [
       "상품 분류와 검색, 장바구니, 리뷰 작성, 구매 기록 보존 등",
       "Passport를 통한 로그인 관리",
       "Heroku를 통해 배포",
-      "https://tshopping-app.herokuapp.com/",
     ],
     4,
     2,
+    tshopping,
+    ["https://github.com/marrtil/TShopping$깃허브 링크", "https://tshopping-app.herokuapp.com/$구현 웹사이트"],
+    "html, css, javascript, Typescript, React, webpack, nodejs, express, heroku, mysql",
   ],
 ];
 

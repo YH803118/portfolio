@@ -1,17 +1,48 @@
 import { history, project } from "./data";
 import "./css/Project.css";
 import "./css/History.css";
+import { useEffect } from "react";
+import { normalColor, selectedColor } from "./App";
 
 const Sections = ({ sectionName }) => {
   return <>{sectionName === "project" ? <Project /> : <History />}</>;
 };
 const Project = () => {
   const proj = project;
+
+  useEffect(() => {
+    const section = document.querySelectorAll(".projectDiv");
+    const naviBtn = document.querySelectorAll(".projectBtn");
+
+    const colorReturn = () => {
+      for (let j = 0; j < naviBtn.length; j++) {
+        naviBtn[j].style.color = normalColor;
+      }
+    };
+
+    window.addEventListener("scroll", () => {
+      const scroll = window.scrollY;
+      colorReturn();
+      const page = Math.floor(scroll - window.innerHeight);
+      if (page < 902) naviBtn[0].style.color = selectedColor;
+      else if (page < 902 + 857) naviBtn[1].style.color = selectedColor;
+      else if (page < 902 + 857 + 685) naviBtn[2].style.color = selectedColor;
+      else if (page < 902 + 857 + 685 + 853) naviBtn[3].style.color = selectedColor;
+      // subItem[page].style.display = "block";
+    });
+
+    for (let i = 0; i < naviBtn.length; i++) {
+      naviBtn[i].addEventListener("click", () => {
+        section[i].scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  }, []);
+
   return (
     <>
       {proj.map((p) => {
         return (
-          <div>
+          <div className="projectDiv">
             <h1 className="projectName">{p[0]}</h1>
             <div className="projectDate">
               {" "}
@@ -25,10 +56,25 @@ const Project = () => {
                   </tr>
                 );
               })}
+              {p[5].map((link) => {
+                const linkSpl = link.split("$");
+                return (
+                  <tr>
+                    <td className="projectContentTr">
+                      <a className="projectLink" href={linkSpl[0]} target="_blank" rel="noreferrer">
+                        {linkSpl[1]}
+                      </a>
+                    </td>
+                  </tr>
+                );
+              })}
+              <tr>
+                <td className="projectContentTr"> 사용기술 : {p[6]}</td>
+              </tr>
             </table>
-            <div>스크린샷</div>
-
-            <div>사용 기술들</div>
+            <div>
+              <img className="projectImg" src={p[4]} alt="projectImg" />
+            </div>
             <hr />
           </div>
         );
@@ -38,6 +84,33 @@ const Project = () => {
 };
 const History = () => {
   const hist = history;
+  // useEffect(() => {
+  //   const section = document.querySelectorAll(".historyTable");
+  //   const naviBtn = document.querySelectorAll(".historyBtn");
+
+  //   const colorReturn = () => {
+  //     for (let j = 0; j < naviBtn.length; j++) {
+  //       naviBtn[j].style.color = normalColor;
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", () => {
+  //     const scroll = window.scrollY;
+  //     colorReturn();
+  //     const page = Math.floor(scroll - window.innerHeight);
+  //     if (page < 902) naviBtn[0].style.color = selectedColor;
+  //     else if (page < 902 + 857) naviBtn[1].style.color = selectedColor;
+  //     else if (page < 902 + 857 + 685) naviBtn[2].style.color = selectedColor;
+  //     else if (page < 902 + 857 + 685 + 853) naviBtn[3].style.color = selectedColor;
+  //     // subItem[page].style.display = "block";
+  //   });
+
+  //   for (let i = 0; i < naviBtn.length; i++) {
+  //     naviBtn[i].addEventListener("click", () => {
+  //       section[i].scrollIntoView({ behavior: "smooth" });
+  //     });
+  //   }
+  // }, []);
   return (
     <>
       {hist.map((h) => {
