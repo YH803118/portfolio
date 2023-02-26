@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./css/App.css";
+import Header from "./Header";
 import Sections from "./Sections";
 export const normalColor = "rgb(40,40,40)";
 export const selectedColor = "rgba(130, 130, 130, 1)";
@@ -95,7 +96,9 @@ function App() {
           <div className="vLine" />
         </div>
         <div className="Content">
-          <div className="section">section1 - 간략한 자기소개</div>
+          <div className="section">
+            <Header />
+          </div>
           <div className="section">
             <Sections sectionName={"project"} />
           </div>
