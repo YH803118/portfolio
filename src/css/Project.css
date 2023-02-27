@@ -1,6 +1,6 @@
 .projectDiv {
   /* height: 770px; */
-  padding-bottom: 30px;
+  padding: 0px 0px 30px 15px;
 }
 
 .projectName {
@@ -16,6 +16,10 @@
   color: rgb(112, 112, 112);
   padding-left: 5px;
   margin: 0;
+}
+
+.projectContent {
+  padding-left: 10px;
 }
 
 .projectContentTable {

@@ -23,7 +23,7 @@ const Project = () => {
     window.addEventListener("scroll", () => {
       const scroll = window.scrollY;
       colorReturn();
-      const page = Math.floor(scroll - window.innerHeight);
+      const page = scroll - 400;
       if (page < 902) naviBtn[0].style.color = selectedColor;
       else if (page < 902 + 857) naviBtn[1].style.color = selectedColor;
       else if (page < 902 + 857 + 685) naviBtn[2].style.color = selectedColor;
@@ -40,6 +40,7 @@ const Project = () => {
 
   return (
     <>
+      <h1 className="projectH1">_ Project</h1>
       {proj.map((p) => {
         return (
           <div className="projectDiv">
@@ -48,34 +49,36 @@ const Project = () => {
               {" "}
               _ 개발기간 : {p[2]}주 _ 개발인원 : {p[3]}명
             </div>
-            <table className="projectContentTable">
-              {p[1].map((content) => {
-                return (
-                  <tr>
-                    <td className="projectContentTr">{content}</td>
-                  </tr>
-                );
-              })}
-              {p[5].map((link) => {
-                const linkSpl = link.split("$");
-                return (
-                  <tr>
-                    <td className="projectContentTr">
-                      <a className="projectLink" href={linkSpl[0]} target="_blank" rel="noreferrer">
-                        {linkSpl[1]}
-                      </a>
-                    </td>
-                  </tr>
-                );
-              })}
-              <tr>
-                <td className="projectContentTr"> 사용기술 : {p[6]}</td>
-              </tr>
-            </table>
-            <div>
-              <img className="projectImg" src={p[4]} alt="projectImg" />
+            <div className="projectContent">
+              <table className="projectContentTable">
+                {p[1].map((content) => {
+                  return (
+                    <tr>
+                      <td className="projectContentTr">{content}</td>
+                    </tr>
+                  );
+                })}
+                {p[5].map((link) => {
+                  const linkSpl = link.split("$");
+                  return (
+                    <tr>
+                      <td className="projectContentTr">
+                        <a className="projectLink" href={linkSpl[0]} target="_blank" rel="noreferrer">
+                          {linkSpl[1]}
+                        </a>
+                      </td>
+                    </tr>
+                  );
+                })}
+                <tr>
+                  <td className="projectContentTr"> 사용기술 : {p[6]}</td>
+                </tr>
+              </table>
+              <div>
+                <img className="projectImg" src={p[4]} alt="projectImg" />
+              </div>
+              {/* <hr /> */}
             </div>
-            <hr />
           </div>
         );
       })}
@@ -113,6 +116,7 @@ const History = () => {
   // }, []);
   return (
     <>
+      <h1>_ Education</h1>
       {hist.map((h) => {
         return (
           <table className="historyTable">
