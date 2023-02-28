@@ -14,6 +14,11 @@
   color: rgb(20, 20, 20);
   display: inline-block;
 }
+@media (max-width: 768px) {
+  .historyName {
+    font-size: 25px;
+  }
+}
 
 .historyDate {
   display: inline;
@@ -33,4 +38,15 @@
   padding-top: 15px;
   list-style: none;
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  .firstTd {
+    width: 88vw;
+  }
+  .historyDate {
+    font-size: 15px;
+  }
+  .historyDetail li {
+    font-size: 15px;
+  }
 }

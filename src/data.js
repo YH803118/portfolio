@@ -19,7 +19,7 @@ export const project = [
     "html, css, javascript, spring, eclipse, MyBatis, JDBC, Apache Tomcat",
   ],
   [
-    "빅데이터 기반 음악 추천",
+    "감정 기반 음악 추천",
     [
       "크롤링을 통해 음악 정보를 받아옴",
       "가사 분석을 통해 이용자의감정 상태에 맞는 음악을 추천",
@@ -32,7 +32,7 @@ export const project = [
     "html, css, javascript, aws, django, uwsgi, nginx, mysql",
   ],
   [
-    "스터디 구인 사이트(Ozistudy)",
+    "스터디 구인 사이트",
     [
       "React와 express를 활용한 회원관리와 스터디 개설, 참여, 검색 등의 기능을 구현",
       "Heroku를 통한 배포 담당",
@@ -45,7 +45,7 @@ export const project = [
     "html, css, javascript, React, nodejs, express, heroku, mysql",
   ],
   [
-    "쇼핑몰(Tshopping)",
+    "쇼핑몰",
     [
       "React와 webpack, Typescript, express를 사용한 프로젝트",
       "상품 분류와 검색, 장바구니, 리뷰 작성, 구매 기록 보존 등 전반적인 쇼핑몰 기능 구현",
@@ -73,7 +73,7 @@ export const history = [
     ],
   ],
   [
-    "빅데이터 기반 AI 개발자 양성과정",
+    "빅데이터 기반 개발자 양성과정",
     "2021.12 ~ 2022.06",
     [
       "html, css, python, javascript 복습",

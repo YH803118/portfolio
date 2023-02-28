@@ -44,10 +44,12 @@ const Project = () => {
       {proj.map((p) => {
         return (
           <div className="projectDiv">
-            <h1 className="projectName">{p[0]}</h1>
-            <div className="projectDate">
-              {" "}
-              _ 개발기간 : {p[2]}주 _ 개발인원 : {p[3]}명
+            <div className="projectTitle">
+              <h1 className="projectName">{p[0]}</h1>
+              <div className="projectDate">
+                {" "}
+                _ 개발기간 : {p[2]}주 _ 개발인원 : {p[3]}명
+              </div>
             </div>
             <div className="projectContent">
               <table className="projectContentTable">

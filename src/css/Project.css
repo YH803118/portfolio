@@ -1,12 +1,29 @@
 .projectDiv {
   /* height: 770px; */
+  width: 800px;
   padding: 0px 0px 30px 15px;
+}
+.projectTitle {
+  width: 800px;
+  border-bottom: 2.5px solid rgb(112, 112, 112);
+}
+@media (max-width: 768px) {
+  .projectTitle {
+    width: 88vw;
+  }
 }
 
 .projectName {
   margin: 10px 0 15px 0;
   font-size: 40px;
   display: inline-block;
+}
+@media (max-width: 768px) {
+  .projectName {
+    /* display: block; */
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
 }
 
 .projectDate {
@@ -21,17 +38,28 @@
 .projectContent {
   padding-left: 10px;
 }
-
+@media (max-width: 768px) {
+  .projectContent {
+    padding: 0px;
+  }
+}
 .projectContentTable {
   /* background-color: rgb(245, 245, 245); */
   width: 700px;
   padding: 2px;
 }
+@media (max-width: 768px) {
+  .projectContentTable {
+    padding: 2px 0px 2px 0px;
+    width: 88vw;
+  }
+}
 .projectContentTr {
   margin: 0px;
-  padding: 7px 2px 2px 5px;
-  border-bottom: 1.5px solid rgb(146, 146, 146);
+  padding: 15px 2px 2px 5px;
+  /* border-bottom: 1.5px solid rgb(146, 146, 146); */
 }
+
 .projectLink {
   color: rgb(112, 112, 112);
   text-decoration: none;
@@ -39,6 +67,11 @@
 .projectImg {
   margin: 10px 0 0 0;
   width: 700px;
+}
+@media (max-width: 768px) {
+  .projectImg {
+    width: 88vw;
+  }
 }
 
 /* 902 857 685 833 */

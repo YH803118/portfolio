@@ -16,6 +16,15 @@ function App() {
     naviBtn[0].style.color = selectedColor;
     naviBtn[0].style.fontSize = "40px";
 
+    if (window.innerWidth < 1100) {
+      document.querySelector(".Content").style.paddingLeft = "0px";
+      // document.querySelector(".Content").style.margin = "auto";
+      document.querySelector(".LeftBar").style.display = "none";
+    } else {
+      document.querySelector(".Content").style.paddingLeft = "22%";
+      document.querySelector(".LeftBar").style.display = "flex";
+    }
+
     window.addEventListener("scroll", () => {
       const scroll = window.scrollY;
       colorReturn();
@@ -99,6 +108,7 @@ function App() {
             </div>
             <div className="lastUpdate">
               <p>dudghks1045@naver.com</p>
+              {/* <p>{new Date()}</p> */}
               <p>Last Update: {lastUpdate}</p>
             </div>
           </div>
