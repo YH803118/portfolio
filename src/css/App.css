@@ -32,6 +32,9 @@
   justify-content: space-between;
   width: 22%;
   height: 100%;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .MenuBar {
   display: flex;
@@ -87,6 +90,10 @@
 .Content {
   /* transition: margin-left linear 0.2s; */
   padding-left: 22%;
+  @media (max-width: 768px) {
+    padding-left: 5%;
+    width: 90%;
+  }
 }
 
 .section {

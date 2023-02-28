@@ -33,7 +33,11 @@ export const project = [
   ],
   [
     "스터디 구인 사이트(Ozistudy)",
-    ["React와 express를 활용한 회원관리와 스터디 개설, 참여, 검색 등의 기능을 구현", "Heroku를 통해 배포"],
+    [
+      "React와 express를 활용한 회원관리와 스터디 개설, 참여, 검색 등의 기능을 구현",
+      "Heroku를 통한 배포 담당",
+      "스터디 개설, 참여, 제목,내용,태그를 통한 검색과 댓글 구현 담당",
+    ],
     4,
     2,
     oziStudy,
@@ -44,8 +48,9 @@ export const project = [
     "쇼핑몰(Tshopping)",
     [
       "React와 webpack, Typescript, express를 사용한 프로젝트",
-      "상품 분류와 검색, 장바구니, 리뷰 작성, 구매 기록 보존 등",
-      "Passport를 통한 로그인 관리",
+      "상품 분류와 검색, 장바구니, 리뷰 작성, 구매 기록 보존 등 전반적인 쇼핑몰 기능 구현",
+      "장바구니, 리뷰, 구매기록, 회원관리 담당",
+      "Passport를 통한 로그인 관리 담당",
       "Heroku를 통해 배포",
     ],
     4,
