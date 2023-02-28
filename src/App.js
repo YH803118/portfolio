@@ -23,15 +23,18 @@ function App() {
       if (scroll < 400) {
         naviBtn[0].style.color = selectedColor;
         naviBtn[0].style.fontSize = "40px";
-        subItem[0].style.display = "block";
+        subItem[0].style.display = "flex";
+        subItem[0].style.flexDirection = "column";
       } else if (scroll < 400 + 902 + 857 + 685 + 853) {
         naviBtn[1].style.color = selectedColor;
         naviBtn[1].style.fontSize = "40px";
-        subItem[1].style.display = "block";
+        subItem[1].style.display = "flex";
+        subItem[1].style.flexDirection = "column";
       } else {
         naviBtn[2].style.color = selectedColor;
         naviBtn[2].style.fontSize = "40px";
-        subItem[2].style.display = "block";
+        subItem[2].style.display = "flex";
+        subItem[2].style.flexDirection = "column";
       }
     });
 
@@ -54,11 +57,12 @@ function App() {
 
     window.addEventListener("resize", () => {
       console.log(window.innerWidth);
-      if (window.innerWidth < 1000) {
+      if (window.innerWidth < 1100) {
         document.querySelector(".Content").style.paddingLeft = "0px";
+        // document.querySelector(".Content").style.margin = "auto";
         document.querySelector(".LeftBar").style.display = "none";
       } else {
-        document.querySelector(".Content").style.paddingLeft = "20%";
+        document.querySelector(".Content").style.paddingLeft = "22%";
         document.querySelector(".LeftBar").style.display = "flex";
       }
     });
