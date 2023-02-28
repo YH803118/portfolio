@@ -124,7 +124,7 @@
 }
 
 .section:nth-child(3) {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 h1 {

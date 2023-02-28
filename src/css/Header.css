@@ -9,18 +9,32 @@
   display: flex;
 }
 
-.Header img {
+.profileImg {
   width: 200px;
   object-fit: cover;
 }
-@media (max-width: 768px) {
-  .Header img {
-    width: 20%;
-  }
+.icon {
+  width: 20px;
+  object-fit: cover;
 }
-
 .Header div p {
   font-size: 22px;
   padding-left: 45px;
   margin: 15px 0px 5px 0px;
+}
+@media (max-width: 768px) {
+  .Header {
+    width: 90vw;
+  }
+  .profileImg {
+    width: 35%;
+  }
+  .icon {
+    width: 14px;
+  }
+  .Header div p {
+    font-size: 15px;
+    /* text-align: center; */
+    padding: 70px 0px 0px 15px;
+  }
 }
