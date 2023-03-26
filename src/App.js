@@ -95,10 +95,9 @@ function App() {
                 Project
               </button>
               <div className="subItem">
-                <button className="projectBtn">_ 학교 홈페이지</button>
-                <button className="projectBtn">_ 빅데이터 기반 음악 추천</button>
-                <button className="projectBtn">_ 스터디 구인(Ozistudy)</button>
                 <button className="projectBtn">_ 쇼핑몰(Tshopping)</button>
+                <button className="projectBtn">_ 스터디 구인(Ozistudy)</button>
+                <button className="projectBtn">_ 감정 기반 음악 추천</button>
               </div>
               <button className="sectionBtn">Education</button>
               <div className="subItem">

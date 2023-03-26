@@ -16,7 +16,10 @@ const Header = () => {
             신입 개발자 김영환입니다"
             <br />
             <br />
-            <img src={mail} className="icon" /> dudghks1045@naver.com
+            {/* <img src={mail} className="icon" />  */}
+            dudghks1045@naver.com
+            <br />
+            010 - 2948 - 2645
           </p>
         </div>
       </div>
