@@ -34,7 +34,7 @@ function App() {
         naviBtn[0].style.fontSize = "40px";
         subItem[0].style.display = "flex";
         subItem[0].style.flexDirection = "column";
-      } else if (scroll < 400 + 902 + 857 + 685 + 853) {
+      } else if (scroll < 400 + 902 + 857 + 685) {
         naviBtn[1].style.color = selectedColor;
         naviBtn[1].style.fontSize = "40px";
         subItem[1].style.display = "flex";
